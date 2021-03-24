@@ -1,0 +1,62 @@
+﻿@*
+
+    Joseph Vore | Section 4 | IS 413
+
+*@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" asp-controller="home" asp-action="Index">Movie Assignment</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="home" asp-action="MyPodcasts">My Podcasts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="home" asp-action="NewMovie">New Movie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" asp-controller="home" asp-action="ListMovies">All Movies</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            @RenderBody()
+
+        </div>
+    </div>
+    <footer class="py-5 niceGradient">
+        <div class="container">
+            <p class="m-0 text-center text-white">Joseph Vore | BYU | Information Systems</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!--Javascript Source-->
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/js/site.js"></script>
+
+</body>
+</html>
